@@ -17,6 +17,8 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  /* filter: blur(4px); */
+  filter: brightness(0.7);
 }
 
 .slider-controls {

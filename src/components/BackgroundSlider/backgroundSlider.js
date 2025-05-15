@@ -1,6 +1,8 @@
+
 import React, { useState } from 'react';
 import './backgroundSlider.css';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
+import Home from '../Home/home';
 
 import bg1 from '../../images/bg_image.jpg';
 import bg2 from '../../images/pos2.jpg';
@@ -9,19 +11,38 @@ import bg4 from '../../images/pos5.jpg';
 
 const backgroundImages = [bg1, bg2, bg3, bg4];
 
-const BackgroundSlider = ({ children }) => {
+const sliderContent = [
+  {
+    title: "Grow your business with OneClick! Best POS & Billing Solution",
+    subtitle: "Manage sales, Inventory, and Customers across diverse Industries.",
+    description: "OneClick FBR Integrated POS Software in Pakistan – fast, simple billing, sales & inventory management.",
+  },
+  {
+    title: "Smart Bakery POS | Sales & Inventory Control",
+    subtitle: "Custom Menus, Stock Tracking & Inventory System.",
+    description: "Advanced sales analytics with real-time inventory tracking.",
+  },
+  {
+    title: "POS Software For Pharmacies | Medical Stores | Drug Shops",
+    subtitle: "Simplify Sales, Control Inventory Tracking Process and Faster Checkouts!",
+    description: "Streamline pharmacy operations with FBR Integrated POS Software – manage inventory, prescriptions & patients efficiently.",
+  },
+  {
+    title: "Elevate Your Grocery Store & SuperMart Inventory Management",
+    subtitle: "Fast Checkout, Real-Time Stock Management & Smart Reporting System!",
+    description: "Advanced FBR Integrated POS Software for grocery stores, supermarts & karyana shops – fast billing & accurate inventory.",
+  },
+];
+
+const BackgroundSlider = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const handleNext = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === backgroundImages.length - 1 ? 0 : prevIndex + 1
-    );
+    setCurrentIndex((prev) => (prev === backgroundImages.length - 1 ? 0 : prev + 1));
   };
 
   const handlePrev = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? backgroundImages.length - 1 : prevIndex - 1
-    );
+    setCurrentIndex((prev) => (prev === 0 ? backgroundImages.length - 1 : prev - 1));
   };
 
   return (
@@ -48,8 +69,13 @@ const BackgroundSlider = ({ children }) => {
         </button>
       </div>
 
+      {/* Overlay Dynamic Home Content */}
       <div className="content-overlay">
-        {children}
+        <Home
+          title={sliderContent[currentIndex].title}
+          subtitle={sliderContent[currentIndex].subtitle}
+          description={sliderContent[currentIndex].description}
+        />
       </div>
     </div>
   );

@@ -1,0 +1,128 @@
+.demo-container {
+  max-width: 1100px;
+  margin: 4rem auto;
+  padding: 1rem;
+  font-family: 'Poppins', sans-serif;
+  color: black;
+  background-color: linen
+}
+
+.demo-main-heading {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-weight: 600;
+  font-size: 3rem;
+  line-height: 2.2rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.demo-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.demo-form {
+  flex: 1 1 350px;
+  background-color: #f8f8f8;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.demo-form-heading {
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.demo-heading-underline {
+  width: 60%;
+  margin: 0 auto 1.5rem auto;
+  border: 1px solid #FAD03E;
+}
+
+.demo-label {
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+  display: block;
+  font-size: 1rem;
+}
+
+.demo-input::placeholder {
+  color: #bcbcbc; /* lighter gray; adjust as needed */
+  opacity: 1;     /* ensure full opacity for brightness */
+}
+
+
+.required {
+  color: red;
+  margin-left: 4px;
+}
+
+
+.demo-input {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.demo-submit-btn {
+  width: 100%;
+  background-color: #d4aa12;
+  border: none;
+  color: white;
+  padding: 0.9rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.demo-submit-btn:hover {
+  background-color: #FAD03E;
+}
+
+.demo-image-container {
+  flex: 1 1 350px;
+  text-align: center;
+}
+
+.demo-image {
+  max-width: 100%;
+  height: 450px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.typing-text {
+  display: inline-block;
+  border-right: 2px solid rgba(0, 0, 0, 0.75);
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  color:  #d4aa12;
+  animation: typing 4s steps(20, end) 1s infinite,
+             blink 0.7s step-end infinite;
+}
+
+@keyframes typing {
+  0% { width: 0 }
+  40% { width: 310px }     /* Typing in */
+  80% { width: 200px }     /* Hold (pause fully visible) */
+  100% { width: 0 }        /* Erase */
+}
+
+@keyframes blink {
+  from, to { border-color: transparent }
+  50% { border-color: #FAD03E }
+}
