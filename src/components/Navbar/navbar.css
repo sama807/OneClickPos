@@ -1,0 +1,46 @@
+.nav-bar-container {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 1rem 3rem;
+  z-index: 10;
+  justify-content: space-between;
+}
+
+/* Logo on the left */
+.navbar-logo {
+  flex: 1;
+}
+
+.logo-image {
+  height: 60px;
+  width: auto;
+}
+
+/* Centered nav items with reduced spacing */
+.nav-bar {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  gap: 1rem; 
+  align-items: center;
+  margin-left: -15rem;
+}
+
+/* Nav links */
+.nav-item {
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+  font-size: 0.9rem;
+  font-family: 'Poppins', sans-serif;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.nav-item:hover {
+  background-color: #D1A42B;
+}
+
