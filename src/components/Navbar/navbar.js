@@ -17,7 +17,7 @@ function Navbar() {
           About
         </a>
         <a href="#" className="nav-item">
-          Services
+          Solution
         </a>
         <a href="#" className="nav-item">
           Contact

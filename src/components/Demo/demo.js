@@ -13,7 +13,7 @@ function Demo() {
       <div className='demo-content'>
         {/* Left side form */}
         <div className='demo-form'>
-          <h2 className='demo-form-heading'>Get a Free Demo</h2>
+          <h1 className='demo-form-heading'>Get a Free Demo</h1>
           <hr className='demo-heading-underline' />
 
           <form>

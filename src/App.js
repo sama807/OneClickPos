@@ -6,6 +6,9 @@ import Navbar from './components/Navbar/navbar';
 import BackgroundSlider from './components/BackgroundSlider/backgroundSlider';
 import Home from './components/Home/home' ;
 import Demo from './components/Demo/demo';
+import Services from './components/Services/services';
+import Highlights from './components/Highlights/highlights';
+import Model from './components/Model/model';
 
 function App() {
   return (
@@ -15,6 +18,10 @@ function App() {
         <Home />
       </BackgroundSlider>
       <Demo />
+      <Services />
+      <Highlights />
+      <Model />
+
      
     
 

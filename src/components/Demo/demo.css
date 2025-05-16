@@ -4,7 +4,8 @@
   padding: 1rem;
   font-family: 'Poppins', sans-serif;
   color: black;
-  background-color: linen
+  background-color: linen;
+  border-radius: 15px;
 }
 
 .demo-main-heading {
@@ -35,7 +36,7 @@
 .demo-form-heading {
   margin-bottom: 0.5rem;
   font-weight: 700;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   text-align: center;
 }
 
@@ -46,7 +47,7 @@
 }
 
 .demo-label {
-  font-weight: 600;
+  font-weight: 400;
   margin-bottom: 0.4rem;
   display: block;
   font-size: 1rem;
