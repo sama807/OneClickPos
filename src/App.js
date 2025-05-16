@@ -9,6 +9,8 @@ import Demo from './components/Demo/demo';
 import Services from './components/Services/services';
 import Highlights from './components/Highlights/highlights';
 import Model from './components/Model/model';
+import Blogs from './components/Blogs/blogs';
+import Footer from './components/Footer/footer';
 
 function App() {
   return (
@@ -21,7 +23,8 @@ function App() {
       <Services />
       <Highlights />
       <Model />
-
+      <Blogs />
+      <Footer />
      
     
 
