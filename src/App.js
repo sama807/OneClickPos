@@ -1,40 +1,29 @@
-// src/App.js
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
+
 import Navbar from './components/Navbar/navbar';
-import BackgroundSlider from './components/BackgroundSlider/backgroundSlider';
-import Home from './components/Home/home' ;
-import Demo from './components/Demo/demo';
-import Services from './components/Services/services';
-import Highlights from './components/Highlights/highlights';
-import Model from './components/Model/model';
-import Blogs from './components/Blogs/blogs';
 import Footer from './components/Footer/footer';
+
+import HomePage from './pages/HomePage';
+import AboutPage from './pages/AboutPage';
+import ContactPage from './pages/ContactPage';
+import SolutionPage from './pages/SolutionPage';
 
 function App() {
   return (
-    <div>
+    <Router>
       <Navbar />
-      <BackgroundSlider>
-        <Home />
-      </BackgroundSlider>
-      <Demo />
-      <Services />
-      <Highlights />
-      <Model />
-      <Blogs />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/about" element={<AboutPage />} />
+        {/* <Route path="/solution" element={<SolutionPage />} /> */}
+        {/* <Route path="/contact" element={<ContactPage />} /> */}
+      </Routes>
       <Footer />
-     
-    
-
-    </div>
+    </Router>
   );
 }
 
 export default App;
-
-
-
-
-

@@ -1,32 +1,31 @@
-// src/components/Navbar.js
+// src/components/Navbar/navbar.js
 import React from 'react';
-import './navbar.css'; // Import the corresponding CSS file
+import { Link } from 'react-router-dom';
+import './navbar.css';
 import logo from '../../images/OneClick-Logo.png';
 
 function Navbar() {
   return (
     <div className="nav-bar-container">
-      <a href="#" className="main-logo">
+      <Link to="/" className="main-logo">
         <img src={logo} alt="OneClick Logo" className="logo-image" />
-      </a>
+      </Link>
       <nav className="nav-bar" id="nav-bar">
-        <a href="#" className="nav-item">
+        <Link to="/" className="nav-item">
           Home
-        </a>
-        <a href="#" className="nav-item">
+        </Link>
+        <Link to="/about" className="nav-item">
           About
-        </a>
-        <a href="#" className="nav-item">
+        </Link>
+        <Link to="/solution" className="nav-item">
           Solution
-        </a>
-        <a href="#" className="nav-item">
+        </Link>
+        <Link to="/contact" className="nav-item">
           Contact
-        </a>
-        
+        </Link>
       </nav>
-      
-      
     </div>
   );
 }
+
 export default Navbar;
