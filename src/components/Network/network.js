@@ -37,6 +37,51 @@ function Network() {
           <p>Years of Experience</p>
         </div>
       </div>
+
+      {/* Descriptive Cards Section */}
+      <div className="network-subcontainer">
+        <div className="network-grid">
+          <div className="network-card">
+            <div className="network-icon">✅</div>
+            <div>
+              <h3>3,500+ Satisfied Customers:</h3>
+              <p>
+                Over the years, we’ve proudly helped thousands of businesses. Our POS software earns trust not only through its ease of use but also its flexibility and impactful results.
+              </p>
+            </div>
+          </div>
+
+          <div className="network-card">
+            <div className="network-icon">✅</div>
+            <div>
+              <h3>80% Customer Retention Rate:</h3>
+              <p>
+                What sets us apart is customer loyalty. With regular improvements and consistent service, 80% of users continue choosing us — a clear sign of long-term satisfaction.
+              </p>
+            </div>
+          </div>
+
+          <div className="network-card">
+            <div className="network-icon">✅</div>
+            <div>
+              <h3>2,700+ Years of Combined Experience:</h3>
+              <p>
+                Our experienced team brings deep industry knowledge to create practical, tailored solutions for modern businesses.
+              </p>
+            </div>
+          </div>
+
+          <div className="network-card">
+            <div className="network-icon">✅</div>
+            <div>
+              <h3>14+ Years in the Industry:</h3>
+              <p>
+                Since our inception, we’ve led with technology and innovation to match our customers' changing needs.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
